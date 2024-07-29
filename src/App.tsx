@@ -4,6 +4,10 @@ function App() {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
       <div>
+        <label>{`<input type="file" accept=".jpeg,.dummy" />`}</label>
+        <input type="file" accept=".jpeg,.pdf" />
+      </div>
+      <div>
         <label>{`<input type="file" accept=".jpeg" />`}</label>
         <input type="file" accept=".jpeg" />
       </div>
