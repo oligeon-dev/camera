@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <label>{`<input type="file" accept=".jpeg" />`}</label>
+        <input type="file" accept=".jpeg" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div>
+        <label>{`<input type="file" accept=".jpeg,.pdf" />`}</label>
+        <input type="file" accept=".jpeg,.pdf" />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <div>
+        <label>{`<input type="file" capture="environment"/>`}</label>
+        <input type="file" capture="environment" />
+      </div>
+      <div>
+        <label>{`<input type="file" accept=".jpg,.jpeg" capture="environment"/>`}</label>
+        <input type="file" accept=".jpg,.jpeg" capture="environment" />
+      </div>
+      <div>
+        <label>{`<input type="file" accept="image/jpg,image/jpeg" capture="environment"/>`}</label>
+        <input
+          type="file"
+          accept="image/jpg,image/jpeg"
+          capture="environment"
+        />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
