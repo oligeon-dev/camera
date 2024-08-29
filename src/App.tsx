@@ -31,7 +31,9 @@ function App() {
           capture="environment"
         />
       </div>
-      <a href="https://www.google.co.jp/">Google</a>
+      <a href="https://www.google.co.jp/" target="_blank">
+        Google
+      </a>
     </div>
   );
 }
