@@ -32,7 +32,7 @@ function App() {
         />
       </div>
       <a href="https://www.google.co.jp/" target="_blank">
-        Google
+        Google Q
       </a>
     </div>
   );
